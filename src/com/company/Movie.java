@@ -18,16 +18,16 @@ public class Movie extends Product {
     }
 
     //METHOD TO PRINT MOVIE DETAILS BELOW
-
-    public String printMovieDetails() {
+    @Override
+    public String printDetails() {
         return String.format("Title: %s \nGenre: %s \nPrice: %d PLN \nAuthor: %s \nProduct ID: %d \n", getTitle(), getGenre(), getPrice(), author, getProductId());
     }
 
-    //JUST OVERRIDED toString() METHOD BELOW
+    //JUST OVERRIDE toString() METHOD BELOW
 
     @Override
     public String toString() {
-        return printMovieDetails();
+        return printDetails();
     }
 
     // GETTERS BELOW

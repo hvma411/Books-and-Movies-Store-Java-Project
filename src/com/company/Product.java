@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.ArrayList;
 
-public class Product {
+public abstract class Product {
     private int productId;
     private int price;
 
@@ -11,6 +11,10 @@ public class Product {
     public Product(int productId, int price) {
         this.productId = productId;
         this.price = price;
+    }
+
+    public String printDetails() {
+        return null;
     }
 
     // GETTERS AND SETTERS BELOW
